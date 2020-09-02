@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+  {{!-- 引用fontawesome的JS --}}
+  <script src="https://kit.fontawesome.com/561cbe5a28.js" crossorigin="anonymous"></script>
+  {{!-- 引用CSS --}}
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/all.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <header>
+    <!-- navigation -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png"
+            width="30" height="30" class="d-inline-block align-top" alt="我的餐廳清單">
+          <span class="font-bold">我的餐廳清單</span>
+        </a>
+      </div>
+    </nav>
+    {{!-- background --}}
+    <div class="banner"></div>
+  </header>
+  {{!-- 套用partial templates --}}
+  {{{body}}}
+
+  {{!-- 引用JS --}}
+  <script src="/javascripts/jquery-3.3.1.js"></script>
+  <script src="/javascripts/popper.min.js"></script>
+  <script src="/javascripts/bootstrap.js"></script>
+</body>
+
+</html>
